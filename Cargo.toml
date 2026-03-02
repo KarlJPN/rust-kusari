@@ -2,3 +2,5 @@
 name = "mini-lang"
 version = "0.1.0"
 edition = "2021"
+description = "Rust学習のためのミニ言語インタプリタ"
+license = "MIT"

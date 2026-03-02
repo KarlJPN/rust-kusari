@@ -51,7 +51,7 @@ CLI引数 → ファイル読み込み → 実データ処理 → エラー改�
 このリポジトリのmainブランチには、著者の学習記録がそのまま残っています。
 まっさらな状態から始めたい場合は、以下のようにしてください。
 
-git clone https://github.com/yourname/mini-lang.git
+git clone https://github.com/KarlJPN/mini-lang.git
 cd mini-lang
 git checkout v0-start
 
