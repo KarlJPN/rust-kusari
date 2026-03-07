@@ -1,14 +1,17 @@
-fn is_passing(score: i64) -> bool {
-    score >= 60
-}
-
 fn main() {
-    let result = is_passing(75);
-    println!("{}", result); // true と表示されるはず
+    let input = String::from("ab\ncd\nef");
 
-    let result2 = is_passing(40);
-    println!("{}", result2); // false と表示されるはず
+    let mut line = 1;
+    let mut column = 1;
 
-    let result3 = is_passing(60);
-    println!("{}", result3);
+    for c in input.chars() {
+        println!("({}, {}): '{}'", line, column, c);
+
+        if c == '\n' {
+            line = line + 1;
+            column = 1;
+        } else {
+            column = column + 1;
+        }
+    }
 }
