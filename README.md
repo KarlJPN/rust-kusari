@@ -1,4 +1,4 @@
-# mini-lang
+# rust-kusari
 
 Rustを「最小単位から、前の理解なしでは次に進めない順番」で学ぶためのハンズオンプロジェクト。
 
@@ -51,8 +51,8 @@ CLI引数 → ファイル読み込み → 実データ処理 → エラー改�
 このリポジトリのmainブランチには、著者の学習記録がそのまま残っています。
 まっさらな状態から始めたい場合は、以下のようにしてください。
 
-git clone https://github.com/KarlJPN/mini-lang.git
-cd mini-lang
+git clone https://github.com/KarlJPN/rust-kusari.git
+cd rust-kusari
 git checkout v0-start
 
 ## ライセンス

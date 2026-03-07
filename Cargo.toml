@@ -1,5 +1,5 @@
 [package]
-name = "mini-lang"
+name = "rust-kusari"
 version = "0.1.0"
 edition = "2021"
 description = "Rust学習のためのミニ言語インタプリタ"
