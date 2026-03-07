@@ -2,7 +2,7 @@
 
 ## 現在のステップ
 
-Step 2 完了 — Step 3 に進む準備ができている
+Step 3 途中 — enum / match / struct の基本を学習済み。テスト導入が残っている
 
 ## 完了済みステップ
 
@@ -10,7 +10,7 @@ Step 2 完了 — Step 3 に進む準備ができている
 
 - [x] Step 1: 基本型・変数・関数
 - [x] Step 2: 文字列・スライス・位置追跡
-- [ ] Step 3: TokenKind と Token を定義する
+- [~] Step 3: TokenKind と Token を定義する（途中）
 - [ ] Step 4: Vec でトークン列を持つ
 - [ ] Step 5: struct と impl でパーサを作る
 - [ ] Step 6: AST を作る
@@ -34,19 +34,19 @@ Step 2 完了 — Step 3 に進む準備ができている
 
 ## 前回のセッション終了時のメモ
 
-- Step 1 完了、Step 2 完了
-- Step 2 小テスト（String/&str）全問正解
+- Step 3 途中（自己評価: 3/5）
 - 学んだこと:
-  - `String`（自分のノート、所有している）と `&str`（指差し、借りている、読むだけ）
-  - `&` で借りると所有権が移らず、何回でも使える
-  - `for c in input.chars()` で文字列を1文字ずつ取り出して繰り返す
-  - `if ... else ...` で条件分岐
-  - `\n` は改行を表す文字
-  - 位置追跡: `let mut line` と `let mut column` で「何行目の何文字目か」を数える
-  - `for` の中身は上から順に実行される（println! → if/else の順番が重要）
+  - `enum`: 種類を全部決めておく仕組み。値を持てるバリアント (`Number(i64)`) と持たないバリアント (`Plus`) がある
+  - `match`: enum の種類ごとに処理を分ける構文。全パターン必須。`Number(n)` の `n` で値を取り出せる
+  - `struct`: 複数の情報を1つにまとめる箱。ドット `.` で中身を取り出す
+  - `usize`: 0以上の正の整数型
+  - struct の中に別の struct や enum を型として入れられる
+- まだ不安なこと:
+  - struct の入れ子が複雑になると混乱しやすい
+  - 一つずつなら理解できるが全体像が掴みにくい
 
 ## 次回やるべき最小タスク
 
-1. Step 3 に進む: `enum TokenKind` と `struct Token` を定義する
-2. `match` による分岐を学ぶ
-3. `Position` をトークンに載せる
+1. Step 3 の続き: TokenKind に Minus と Identifier を追加する
+2. テスト（`#[test]`, `assert_eq!`）を導入する
+3. 復習: enum / match / struct を使ったコードを読み直す
